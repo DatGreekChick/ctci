@@ -14,4 +14,3 @@ def urlify(string: str) -> str:
 
 
 print(urlify("Mr John Smith     "))
-

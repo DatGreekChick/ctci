@@ -29,4 +29,3 @@ def check_permutations(s1: str, s2: str) -> bool:
 print(check_permutations("abc", "cab"))  # True
 print(check_permutations("test", "ttew"))  # False
 print(check_permutations("geeksforgeeks", "forgeeksgeeks"))  # True
-
