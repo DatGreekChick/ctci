@@ -5,10 +5,7 @@ def urlify(string: str) -> str:
     url = []
 
     for s in string.strip():
-        if s == " ":
-            url.append("%20")
-        else:
-            url.append(s)
+        url.append("%20" if s.isspace() else s)
 
     return "".join(url)
 
