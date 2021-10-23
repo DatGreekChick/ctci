@@ -14,12 +14,12 @@
 1. [Zero Matrix]
 1. [String Rotation]
 
-[is unique]: ./is_unique.py
-[check permutation]: ./check_permutation.py
-[urlify]: ./urlify.py
-[palindrome permutation]: ./palindrome_permutation.py
-[one away]: ./one_away.py
-[string compression]: ./string_compression.py
-[rotate matrix]: ./rotate_matrix.py
-[zero matrix]: ./zero_matrix.py
-[string rotation]: ./string_rotation.py
+[is unique]: ./python/is_unique.py
+[check permutation]: ./python/check_permutation.py
+[urlify]: ./python/urlify.py
+[palindrome permutation]: ./python/palindrome_permutation.py
+[one away]: ./python/one_away.py
+[string compression]: ./python/string_compression.py
+[rotate matrix]: ./python/rotate_matrix.py
+[zero matrix]: ./python/zero_matrix.py
+[string rotation]: ./python/string_rotation.py
