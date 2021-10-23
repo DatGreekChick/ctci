@@ -12,7 +12,10 @@ Currently all answers are in Python.
 1. [Arrays and Strings]
 1. [Linked Lists]
 1. [Stacks and Queues]
+1. [Trees and Graphs]
 
 [arrays and strings]: ./arrays-and-strings/
 [linked lists]: ./linked-lists/
 [stacks and queues]: ./stacks-and-queues/
+[trees and graphs]: ./trees-and-graphs/
+
