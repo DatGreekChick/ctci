@@ -10,5 +10,7 @@ Currently all answers are in Python.
 ## Chapters
 
 1. [Arrays and Strings]
+1. [Linked Lists]
 
 [arrays and strings]: ./arrays-and-strings/
+[linked lists]: ./linked-lists/
