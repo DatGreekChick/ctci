@@ -1,6 +1,5 @@
 # 4.7: Build Order
 
-
 import collections
 
 

@@ -1,12 +1,12 @@
 # 4.6: Successor
 
+from graphs import Node
 
-class Node:
+
+class NodeWithParent(Node):
     def __init__(self, value):
-        self.value = value
+        super().__init__(value)
         self.parent = None
-        self.left = None
-        self.right = None
 
 
 def left_most_child(node: Node) -> Node:
@@ -36,16 +36,16 @@ def successor(node: Node) -> Node:
     return x
 
 
-r = Node(8)
-r.left = Node(4)
+r = NodeWithParent(8)
+r.left = NodeWithParent(4)
 r.left.parent = r
-r.left.left = Node(2)
+r.left.left = NodeWithParent(2)
 r.left.left.parent = r.left
-r.left.right = Node(12)
+r.left.right = NodeWithParent(12)
 r.left.right.parent = r.left
-r.right = Node(10)
+r.right = NodeWithParent(10)
 r.right.parent = r
-r.right.right = Node(20)
+r.right.right = NodeWithParent(20)
 r.right.right.parent = r.right
 
 print(successor(r).value)  # 10
