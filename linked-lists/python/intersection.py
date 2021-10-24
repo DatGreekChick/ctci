@@ -79,6 +79,5 @@ l2.add(7)
 l2.add(4)
 l2.add(6)
 
-print("Chapter 2.7")
 print(intersection(head1, head2).data)
 print(intersection(l1.head, l2.head))

@@ -2,7 +2,7 @@
 
 from linked_list import LinkedList, Node
 
-# Runtime: O(n) - Space: O(1)
+# Runtime: O(n - k) - Space: O(1)
 def return_kth_to_last(kth_idx: int, ll: LinkedList) -> Node:
     size = ll.size
     if size < kth_idx:
@@ -31,6 +31,7 @@ ll.add(7)
 print(return_kth_to_last(2, ll).data)
 
 
+# Runtime: O(n - k) - Space: O(1)
 def return_kth_to_last_without_size(kth_idx: int, head: Node) -> Node:
     p1 = head
     p2 = head
@@ -46,15 +47,6 @@ def return_kth_to_last_without_size(kth_idx: int, head: Node) -> Node:
 
     return p2
 
-
-ll = LinkedList()
-ll.add(1)
-ll.add(2)
-ll.add(3)
-ll.add(4)
-ll.add(5)
-ll.add(6)
-ll.add(7)
 
 print("Chapter 2.2 without size information")
 print(return_kth_to_last_without_size(2, ll.head).data)

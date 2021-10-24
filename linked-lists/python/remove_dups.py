@@ -9,11 +9,10 @@ def remove_dups(ll: LinkedList):
     curr = ll.head
 
     while curr:
-        if curr.data not in seen:
-            seen.add(curr.data)
-        else:
+        if curr.data in seen:
             prev.next = curr.next
 
+        seen.add(curr.data)
         prev = curr
         curr = curr.next
 

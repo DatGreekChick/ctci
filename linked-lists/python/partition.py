@@ -32,6 +32,5 @@ ll.add(8)
 ll.add(5)
 ll.add(3)
 
-print("Chapter 2.4")
 print(partition(ll.head, 5).data)
 ll.print()

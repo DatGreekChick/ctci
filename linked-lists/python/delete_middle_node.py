@@ -2,7 +2,7 @@
 
 from linked_list import LinkedList, Node
 
-# Runtime: O(n) - Space: O(1)
+# Runtime: O(1) - Space: O(1)
 def delete_middle_node(node: Node) -> bool:
     if not node or node.next is None:
         return False

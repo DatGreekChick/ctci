@@ -3,17 +3,13 @@
 from linked_list import LinkedList, Node
 
 # Runtime: O(n) - Space: O(1)
-def get_values(node: Node):
+def get_values(node: Node) -> tuple:
     size = 0
     counts = {}
 
     while node:
         size += 1
-        if node.data not in counts:
-            counts[node.data] = 1
-        else:
-            counts[node.data] += 1
-
+        counts.update({node.data: counts.get(node.data, 0) + 1})
         node = node.next
 
     return size, counts
@@ -22,19 +18,23 @@ def get_values(node: Node):
 def palindrome(node: Node) -> bool:
     size, counts = get_values(node)
     divergences = 0
+    even = size % 2 == 0
 
     # if even, counts must be divisible by 2
     # if odd, there's one difference allowed
     for c in counts:
-        if size % 2 == 0:
-            if counts[c] % 2 != 0:
-                return False
-        else:
-            if counts[c] % 2 != 0:
-                divergences += 1
+        odd = counts[c] % 2 != 0
 
-                if divergences > 1:
-                    return False
+        if even:
+            if odd:
+                return False
+            continue
+
+        if odd:
+            divergences += 1
+
+            if divergences > 1:
+                return False
 
     return True
 
@@ -69,7 +69,6 @@ print(palindrome(l3.head))  # True
 def palindrome2(node: Node) -> bool:
     slow = node
     fast = node
-
     stack = []
 
     # once fast/fast.next are null, slow is at middle
