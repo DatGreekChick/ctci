@@ -16,7 +16,7 @@ class Graph:
     def __init__(self):
         self.nodes = []
 
-    def add(self, node) -> Node:
+    def add(self, node: Node) -> None:
         self.nodes.append(node)
 
 
