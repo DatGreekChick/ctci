@@ -13,7 +13,7 @@
 1. [Build Order]
 1. [First Common Ancestor]
 1. [BST Sequences]
-1. [Check Subtree] ⚠️
+1. [Check Subtree]
 1. [Random Node] ⚠️
 1. [Paths with Sum] ⚠️
 
