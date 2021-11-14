@@ -14,7 +14,7 @@
 1. [First Common Ancestor]
 1. [BST Sequences]
 1. [Check Subtree]
-1. [Random Node] ⚠️
+1. [Random Node]
 1. [Paths with Sum] ⚠️
 
 ⚠️ : Coming soon. Feel free to submit a PR, though!
