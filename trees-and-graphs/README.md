@@ -15,9 +15,7 @@
 1. [BST Sequences]
 1. [Check Subtree]
 1. [Random Node]
-1. [Paths with Sum] ⚠️
-
-⚠️ : Coming soon. Feel free to submit a PR, though!
+1. [Paths with Sum]
 
 [route between nodes]: ./python/route_between_nodes.py
 [minimal tree]: ./python/minimal_tree.py
