@@ -8,9 +8,7 @@ def string_compression(string: str) -> str:
 
     for s in string:
         if s != curr:
-            compressed.append(curr)
-            compressed.append(str(count))
-
+            compressed.append(f"{curr}{count}")
             curr = s
             count = 1
         else:
@@ -19,9 +17,7 @@ def string_compression(string: str) -> str:
         if len(compressed) > len(string):
             return string
 
-    compressed.append(curr)
-    compressed.append(str(count))
-
+    compressed.append(f"{curr}{count}")
     return "".join(compressed)
 
 

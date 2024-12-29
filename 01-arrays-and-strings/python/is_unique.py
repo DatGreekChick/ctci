@@ -13,7 +13,7 @@ def is_unique(string: str) -> bool:
     return True
 
 
-# Runtime: O(n log n + n) - Space: O(1)
+# Runtime: O(n log n) - Space: O(1)
 def is_unique_without_additional_data_structures(string: str) -> bool:
     string.sort()  # O(n log n)
     prev = ""
