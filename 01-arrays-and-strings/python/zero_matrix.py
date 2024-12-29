@@ -1,6 +1,6 @@
 # 1.8: Zero Matrix
 
-# Runtime: O(n^2) - Space: O(n)
+# Runtime: O(n * m) - Space: O(n)
 def zero_matrix(matrix: list):
     cols = []
 
@@ -8,8 +8,7 @@ def zero_matrix(matrix: list):
         for j, n in enumerate(m):
             if n == 0:
                 # set entire row to zeros
-                zero_row = [0] * len(m)
-                matrix[i] = zero_row
+                matrix[i] = [0] * len(m)
 
                 # save cols for later
                 cols.append(j)

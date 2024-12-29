@@ -1,6 +1,6 @@
 # 1.5: One Away
 
-# Runtime: O(n) - Space: O(1) * technically O(n) because of longer/shorter
+# Runtime: O(min(n, m)) - Space: O(1)
 def one_away(s1: str, s2: str) -> bool:
     if abs(len(s1) - len(s2)) > 1:
         return False
